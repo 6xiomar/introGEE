@@ -1,6 +1,18 @@
-// intro Google Earth Engine: 
-// Se dibuja un polígono que encierra la ciudad de bogotá, este se convierte en una geometría que se utiliza luego para realizar un recorte sobre la imagen utilizada.
+var geometry = 
+    /* color: #98ff00 */
+    /* shown: false */
+    /* displayProperties: [
+      {
+        "type": "rectangle"
+      }
+    ] */
+    ee.Geometry.Polygon(
+        [[[-74.26562335784665, 4.788377979592906],
+          [-74.26562335784665, 4.455411702176463],
+          [-73.97276904876462, 4.455411702176463],
+          [-73.97276904876462, 4.788377979592906]]], null, false);
 
+          
 print("Hola GEE")
 var plazaBolivar = ee.Geometry.Point([-74.0760, 4.598]);
 
